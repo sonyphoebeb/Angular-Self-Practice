@@ -14,4 +14,8 @@ export class PropertyBinding {
   inputPlaceholder = 'Enter your name';
   isDisabled = true;
   buttonLabel = 'Click Me!';
+
+  toggleButton() {
+    this.isDisabled = !this.isDisabled; // switches between true/false
+  }
 }

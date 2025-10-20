@@ -7,8 +7,10 @@
 <!-- Input Example -->
 <input type="text" [placeholder]="inputPlaceholder">
 
-<!-- Button Example -->
-<button [disabled]="isDisabled">{{ buttonLabel }}</button>
+<!-- Property binding to disable/enable button -->
+<button [disabled]="isDisabled">Main Button</button>
 
-<!-- Changing property dynamically -->
+<!-- Event binding to trigger toggle -->
+<button (click)="toggleButton()">Toggle Disabled</button>
+
 <p>Disabled status: {{ isDisabled }}</p>
