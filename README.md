@@ -130,11 +130,38 @@ export class PropertyBindingExampleComponent {
 
 🧠 Key Points
 
-Concept	Description	Example
-Purpose	Bind component property to HTML element property	[disabled]="isDisabled"
-Direction	One-way (Component → DOM)	
-Common Use Cases	[src], [value], [disabled], [class], [style]	
-Difference from Interpolation	Interpolation only binds text; property binding updates actual DOM properties	{{}} vs []
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Concept</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Purpose</td>
+      <td>Bind component property to HTML element property</td>
+      <td>[disabled]="isDisabled"</td>
+    </tr>
+    <tr>
+      <td>Direction</td>
+      <td>One-way (Component → DOM)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Common Use Cases</td>
+      <td>[src], [value], [disabled], [class], [style]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Difference from Interpolation</td>
+      <td>Interpolation only binds text; property binding updates actual DOM properties</td>
+      <td>{{}} vs []</td>
+    </tr>
+  </tbody>
+</table>
+
 
 <h2> ✅ Summary </h2> 
 
