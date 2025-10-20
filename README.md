@@ -4,17 +4,17 @@
 
 <h2>📅 Date: 19 October 2025 </h2> 
 
-📁 Folder: D:\fullstackdevelopment\angular-self-practice\data-binding-demo
+<b>📁 Folder:</b> D:\fullstackdevelopment\angular-self-practice\data-binding-demo
 
 <h2> 🔹 1. Interpolation </h2> 
 
-📘 Definition
+<b>📘 Definition </b>
 
 Interpolation is used to display dynamic data from the TypeScript class into the HTML template using double curly braces {{ }}.
 
 Type: One-way data binding (Component ➡ Template)
 
-🧩 Example
+<b> 🧩 Example </b>
 
 🧱 interpolation-example.component.ts
 
@@ -47,7 +47,7 @@ Type: One-way data binding (Component ➡ Template)
     <p>{{ getWelcomeMessage() }}</p>
     <p>Next Year Age: {{ age + 1 }}</p>
 
-🧠 Key Points
+<b> 🧠 Key Points </b>
 
 <table border="1" cellpadding="8" cellspacing="0">
   <thead>
@@ -81,18 +81,17 @@ Type: One-way data binding (Component ➡ Template)
   </tbody>
 </table>
 
-
-
+<br>
 <h2> 🔹 2. Property Binding </h2> 
 
-📘 Definition
+<b>📘 Definition </b>
 
 Property Binding binds component data to HTML element properties using square brackets [ ].
 Used to control attributes like src, disabled, value, etc.
 
 Type: One-way data binding (Component ➡ DOM Property)
 
-🧩 Example
+<b> 🧩 Example </b>
 
 🧱 property-binding-example.component.ts
 
@@ -129,7 +128,7 @@ Type: One-way data binding (Component ➡ DOM Property)
 
     <p>Disabled status: {{ isDisabled }}</p>
 
-🧠 Key Points
+<b> 🧠 Key Points </b>
 
 <table border="1" cellpadding="5" cellspacing="0">
   <thead>
@@ -163,7 +162,7 @@ Type: One-way data binding (Component ➡ DOM Property)
   </tbody>
 </table>
 
-
+<br>
 <h2> ✅ Summary </h2> 
 
 <table border="1" cellpadding="5" cellspacing="0">
