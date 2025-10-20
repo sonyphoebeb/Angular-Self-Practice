@@ -2,11 +2,11 @@
 
 # 🧠 Angular Practice — Data Binding (Interpolation & Property Binding)
 
-📅 Date: 19 October 2025
+<h2></h2> 📅 Date: 19 October 2025
 
 📁 Folder: D:\fullstackdevelopment\angular-self-practice\data-binding-demo
 
-🔹 1. Interpolation
+<h2> 🔹 1. Interpolation </h2> 
 
 📘 Definition
 
@@ -82,7 +82,7 @@ export class InterpolationExampleComponent {
 
 
 
-🔹 2. Property Binding
+<h2> 🔹 2. Property Binding </h2> 
 
 📘 Definition
 
@@ -136,7 +136,7 @@ Direction	One-way (Component → DOM)
 Common Use Cases	[src], [value], [disabled], [class], [style]	
 Difference from Interpolation	Interpolation only binds text; property binding updates actual DOM properties	{{}} vs []
 
-✅ Summary
+<h2> ✅ Summary </h2> 
 
 Binding Type	Direction	Syntax	Example	Description
 Interpolation	Component → Template	{{ variable }}	{{ userName }}	Displays data as text
