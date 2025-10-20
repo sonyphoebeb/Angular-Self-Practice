@@ -1,9 +1,13 @@
 # Angular-Self-Practice
 
-🧠 Angular Practice — Data Binding (Interpolation & Property Binding)
+# 🧠 Angular Practice — Data Binding (Interpolation & Property Binding)
+
 📅 Date: 19 October 2025
+
 📁 Folder: D:\fullstackdevelopment\angular-self-practice\data-binding-demo
+
 🔹 1. Interpolation
+
 📘 Definition
 
 Interpolation is used to display dynamic data from the TypeScript class into the HTML template using double curly braces {{ }}.
@@ -11,7 +15,9 @@ Interpolation is used to display dynamic data from the TypeScript class into the
 Type: One-way data binding (Component ➡ Template)
 
 🧩 Example
+
 🧱 interpolation-example.component.ts
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -31,6 +37,7 @@ export class InterpolationExampleComponent {
 }
 
 🧾 interpolation-example.component.html
+
 <h2>{{ title }}</h2>
 
 <p>User Name: {{ userName }}</p>
@@ -41,12 +48,15 @@ export class InterpolationExampleComponent {
 <p>Next Year Age: {{ age + 1 }}</p>
 
 🧠 Key Points
+
 Concept	Description	Example
 Purpose	Display dynamic data	{{ userName }}
 Direction	One-way (Component → Template)	
 Supports	Variables, function calls, expressions	{{ age + 5 }}
 Cannot Do	Assign values or execute statements	❌ {{ age = 25 }}
+
 🔹 2. Property Binding
+
 📘 Definition
 
 Property Binding binds component data to HTML element properties using square brackets [ ].
@@ -55,7 +65,9 @@ Used to control attributes like src, disabled, value, etc.
 Type: One-way data binding (Component ➡ DOM Property)
 
 🧩 Example
+
 🧱 property-binding-example.component.ts
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -75,6 +87,7 @@ export class PropertyBindingExampleComponent {
 }
 
 🧾 property-binding-example.component.html
+
 <h2>{{ title }}</h2>
 
 <img [src]="imageUrl" width="150" alt="Angular Logo">
@@ -89,14 +102,20 @@ export class PropertyBindingExampleComponent {
 <p>Disabled status: {{ isDisabled }}</p>
 
 🧠 Key Points
+
 Concept	Description	Example
 Purpose	Bind component property to HTML element property	[disabled]="isDisabled"
 Direction	One-way (Component → DOM)	
 Common Use Cases	[src], [value], [disabled], [class], [style]	
 Difference from Interpolation	Interpolation only binds text; property binding updates actual DOM properties	{{}} vs []
+
 ✅ Summary
+
 Binding Type	Direction	Syntax	Example	Description
 Interpolation	Component → Template	{{ variable }}	{{ userName }}	Displays data as text
 Property Binding	Component → DOM	[property]="variable"	[disabled]="isDisabled"	Binds real DOM property
+
+
+
 
 
