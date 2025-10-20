@@ -2,7 +2,7 @@
 
 # 🧠 Angular — Data Binding (Interpolation & Property Binding)
 
-<h2>📅 Date: 19 October 2025 </h2> 
+<h3>📅 Date: 20 October 2025 </h3> 
 
 <b>📁 Folder:</b> D:\fullstackdevelopment\angular-self-practice\data-binding-demo
 
