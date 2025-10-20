@@ -4,8 +4,7 @@
 <h3>📅 Date: 20 October 2025 </h3> 
 
 <b>📁 Folder:</b> D:\fullstackdevelopment\angular-self-practice\data-binding
-
-<br>
+<h3></h3>
 <h2> 🔹 1. Interpolation </h2> 
 
 <b>📘 Definition </b>
