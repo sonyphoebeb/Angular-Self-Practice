@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class Interpolation {
 
-title = 'Interpolation';
+title = 'Angular Interpolation';
 empName = 'Sony Phoebe';
 empId = 1078261;
 company = 'Tech Mahindra';

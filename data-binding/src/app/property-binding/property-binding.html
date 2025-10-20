@@ -1,1 +1,14 @@
-<p>property-binding works!</p>
+<h2>{{ title }}</h2>
+
+<!-- Image Example -->
+<img [src]="imageUrl" width="150" alt="Angular Logo">
+
+<br>
+<!-- Input Example -->
+<input type="text" [placeholder]="inputPlaceholder">
+
+<!-- Button Example -->
+<button [disabled]="isDisabled">{{ buttonLabel }}</button>
+
+<!-- Changing property dynamically -->
+<p>Disabled status: {{ isDisabled }}</p>
