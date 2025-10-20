@@ -48,12 +48,39 @@ export class InterpolationExampleComponent {
 <p>Next Year Age: {{ age + 1 }}</p>
 
 🧠 Key Points
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Concept</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Purpose</td>
+      <td>Display dynamic data</td>
+      <td>{{'{{ userName }}'}}</td>
+    </tr>
+    <tr>
+      <td>Direction</td>
+      <td>One-way (Component → Template)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Supports</td>
+      <td>Variables, function calls, expressions</td>
+      <td>{{'{{ age + 5 }}'}}</td>
+    </tr>
+    <tr>
+      <td>Cannot Do</td>
+      <td>Assign values or execute statements</td>
+      <td>❌ {{'{{ age = 25 }}'}}</td>
+    </tr>
+  </tbody>
+</table>
 
-Concept	Description	Example
-Purpose	Display dynamic data	{{ userName }}
-Direction	One-way (Component → Template)	
-Supports	Variables, function calls, expressions	{{ age + 5 }}
-Cannot Do	Assign values or execute statements	❌ {{ age = 25 }}
+
 
 🔹 2. Property Binding
 
