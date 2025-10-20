@@ -6,6 +6,7 @@
 
 <b>📁 Folder:</b> D:\fullstackdevelopment\angular-self-practice\data-binding
 
+<br>
 <h2> 🔹 1. Interpolation </h2> 
 
 <b>📘 Definition </b>
