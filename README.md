@@ -165,9 +165,33 @@ export class PropertyBindingExampleComponent {
 
 <h2> ✅ Summary </h2> 
 
-Binding Type	Direction	Syntax	Example	Description
-Interpolation	Component → Template	{{ variable }}	{{ userName }}	Displays data as text
-Property Binding	Component → DOM	[property]="variable"	[disabled]="isDisabled"	Binds real DOM property
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Binding Type</th>
+      <th>Direction</th>
+      <th>Syntax</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interpolation</td>
+      <td>Component → Template</td>
+      <td>{{ variable }}</td>
+      <td>{{ userName }}</td>
+      <td>Displays data as text</td>
+    </tr>
+    <tr>
+      <td>Property Binding</td>
+      <td>Component → DOM</td>
+      <td>[property]="variable"</td>
+      <td>[disabled]="isDisabled"</td>
+      <td>Binds real DOM property</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
