@@ -1,8 +1,8 @@
 # Angular-Self-Practice
 
-# 🧠 Angular Practice — Data Binding (Interpolation & Property Binding)
+# 🧠 Angular — Data Binding (Interpolation & Property Binding)
 
-<h2></h2> 📅 Date: 19 October 2025
+<h2>📅 Date: 19 October 2025 </h2> 
 
 📁 Folder: D:\fullstackdevelopment\angular-self-practice\data-binding-demo
 
@@ -18,36 +18,37 @@ Type: One-way data binding (Component ➡ Template)
 
 🧱 interpolation-example.component.ts
 
-import { Component } from '@angular/core';
+    import { Component } from '@angular/core';
 
-@Component({
-  selector: 'app-interpolation-example',
-  templateUrl: './interpolation-example.component.html',
-  styleUrls: ['./interpolation-example.component.css']
-})
-export class InterpolationExampleComponent {
-  title = 'Angular Interpolation Example';
-  userName = 'Sony';
-  age = 22;
-  currentDate = new Date();
+    @Component({
+     selector: 'app-interpolation-example',
+     templateUrl: './interpolation-example.component.html',
+     styleUrls: ['./interpolation-example.component.css']
+    })
+    export class InterpolationExampleComponent {
+    title = 'Angular Interpolation Example';
+    userName = 'Sony';
+    age = 22;
+    currentDate = new Date();
 
-  getWelcomeMessage() {
+    getWelcomeMessage() {
     return `Welcome ${this.userName}, to Angular!`;
-  }
-}
+    }
+    }
 
 🧾 interpolation-example.component.html
 
-<h2>{{ title }}</h2>
+    <h2>{{ title }}</h2>
 
-<p>User Name: {{ userName }}</p>
-<p>User Age: {{ age }}</p>
-<p>Current Date: {{ currentDate }}</p>
+    <p>User Name: {{ userName }}</p>
+    <p>User Age: {{ age }}</p>
+    <p>Current Date: {{ currentDate }}</p>
 
-<p>{{ getWelcomeMessage() }}</p>
-<p>Next Year Age: {{ age + 1 }}</p>
+    <p>{{ getWelcomeMessage() }}</p>
+    <p>Next Year Age: {{ age + 1 }}</p>
 
 🧠 Key Points
+
 <table border="1" cellpadding="8" cellspacing="0">
   <thead>
     <tr>
@@ -95,38 +96,38 @@ Type: One-way data binding (Component ➡ DOM Property)
 
 🧱 property-binding-example.component.ts
 
-import { Component } from '@angular/core';
+    import { Component } from '@angular/core';
 
-@Component({
-  selector: 'app-property-binding-example',
-  templateUrl: './property-binding-example.component.html',
-  styleUrls: ['./property-binding-example.component.css']
-})
-export class PropertyBindingExampleComponent {
-  title = 'Angular Property Binding Example';
-  imageUrl = 'https://angular.io/assets/images/logos/angular/angular.png';
-  inputPlaceholder = 'Enter your name';
-  isDisabled = true;
+    @Component({
+    selector: 'app-property-binding-example',
+    templateUrl: './property-binding-example.component.html',
+    styleUrls: ['./property-binding-example.component.css']
+    })
+    export class PropertyBindingExampleComponent {
+    title = 'Angular Property Binding Example';
+    imageUrl = 'https://angular.io/assets/images/logos/angular/angular.png';
+    inputPlaceholder = 'Enter your name';
+    isDisabled = true;
 
-  toggleButton() {
+    toggleButton() {
     this.isDisabled = !this.isDisabled;
-  }
-}
+     }
+    }
 
 🧾 property-binding-example.component.html
 
-<h2>{{ title }}</h2>
+    <h2>{{ title }}</h2>
 
-<img [src]="imageUrl" width="150" alt="Angular Logo">
-<input type="text" [placeholder]="inputPlaceholder">
+    <img [src]="imageUrl" width="150" alt="Angular Logo">
+    <input type="text" [placeholder]="inputPlaceholder">
 
-<!-- Button controlled by property binding -->
-<button [disabled]="isDisabled">Main Button</button>
+    <!-- Button controlled by property binding -->
+    <button [disabled]="isDisabled">Main Button</button>
 
-<!-- Event binding to toggle the disabled state -->
-<button (click)="toggleButton()">Toggle Disabled</button>
+    <!-- Event binding to toggle the disabled state -->
+    <button (click)="toggleButton()">Toggle Disabled</button>
 
-<p>Disabled status: {{ isDisabled }}</p>
+    <p>Disabled status: {{ isDisabled }}</p>
 
 🧠 Key Points
 
