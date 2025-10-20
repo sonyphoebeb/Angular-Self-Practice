@@ -1,11 +1,11 @@
 
 # 🧠 Angular — Data Binding (Interpolation & Property Binding)
 
-<h3>📅 Date: 20 October 2025 </h3> 
+<b>📅 Date: 20 October 2025 </b> 
 
 <b>📁 Folder:</b> D:\fullstackdevelopment\angular-self-practice\data-binding
-<h3></h3>
-<h2> 🔹 1. Interpolation </h2> 
+
+<h2> 1. Interpolation </h2> 
 
 <b>📘 Definition </b>
 
@@ -81,7 +81,7 @@ Type: One-way data binding (Component ➡ Template)
 </table>
 
 <br>
-<h2> 🔹 2. Property Binding </h2> 
+<h2>2. Property Binding </h2> 
 
 <b>📘 Definition </b>
 
