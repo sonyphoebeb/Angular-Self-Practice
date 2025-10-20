@@ -1,4 +1,3 @@
-# Angular-Self-Practice
 
 # 🧠 Angular — Data Binding (Interpolation & Property Binding)
 
