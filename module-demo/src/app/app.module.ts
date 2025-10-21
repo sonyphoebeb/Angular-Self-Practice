@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { App } from './app.component';  // Correct component name and path
 import { Welcome } from './welcome/welcome';
+import { UserModule } from './user/user-module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { Welcome } from './welcome/welcome';
   ],
   imports: [
     BrowserModule,
-    Welcome
+    Welcome,
+    UserModule
   ],
   providers: [],
   bootstrap: [App]  // Root component
