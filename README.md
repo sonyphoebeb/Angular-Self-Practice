@@ -209,15 +209,15 @@ It’s built using Angular CLI and follows NgModule-based architecture for clean
 
 * 🏠 Root Module (AppModule) – Bootstraps the application
 
-👤 Feature Module (UserModule) – Contains user-related components (ProfileComponent)
+* 👤 Feature Module (UserModule) – Contains user-related components (ProfileComponent)
 
-🛠️ Shared Module (SharedModuleExampleModule) – Reusable components, directives, and pipes (ButtonComponent, HighlightDirective, CapitalizePipe)
+* 🛠️ Shared Module (SharedModuleExampleModule) – Reusable components, directives, and pipes (ButtonComponent, HighlightDirective, CapitalizePipe)
 
-🌐 Routing – Feature module routes for /profile
+* 🌐 Routing – Feature module routes for /profile
 
-🔁 Reusability – Shared components usable across multiple modules
+* 🔁 Reusability – Shared components usable across multiple modules
 
-📂 Folder Structure
+<b>📂 Folder Structure</b>
 
 src/
 
