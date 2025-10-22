@@ -321,16 +321,16 @@ src/
 
     <p>{{ 'angular demo' | capitalize }}</p>
 
-⚙️ Commands
+<h3>⚙️ Commands</h3>
 
-# Serve the app
-ng serve
+    # Serve the app
+    ng serve
 
-# Build for production
-ng build --prod
+    # Build for production
+    ng build --prod
 
-# Run tests
-ng test
+    # Run tests
+    ng test
 
 📝 Notes
 
