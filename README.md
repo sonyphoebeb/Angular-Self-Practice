@@ -194,11 +194,10 @@ Type: One-way data binding (Component ➡ DOM Property)
 
 
 <br>
-# 🧠 Angular — Data Binding (Interpolation & Property Binding)
+# 🚀 Angular Feature & Shared Modules Practice
 
-<b>📅 Date: 20 October 2025 </b> 
+<b>📅 Date: 22 October 2025 </b> 
 
-🚀 Angular Feature & Shared Modules Demo
 📖 Overview
 
 This project demonstrates Feature Modules and Shared Modules in Angular.
