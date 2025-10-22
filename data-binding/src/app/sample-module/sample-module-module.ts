@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Input, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 
@@ -9,4 +9,6 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ]
 })
-export class SampleModuleModule { }
+export class SampleModuleModule { 
+  @Input() label = 'Click Me!';
+}
