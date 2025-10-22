@@ -195,17 +195,18 @@ Type: One-way data binding (Component ➡ DOM Property)
 
 
 <br>
-# 🚀 Angular Feature & Shared Modules Practice
+
+#  🚀 Angular Feature & Shared Modules Practice
 
 <b>📅 Date: 22 October 2025 </b> 
 
-<b>📖 Overview</b>
+<h3>📖 Overview</h3>
 
 This project demonstrates Feature Modules and Shared Modules in Angular.
 
 It’s built using Angular CLI and follows NgModule-based architecture for clean, modular code.
 
-<b>✨ Key Features</b>
+<h3>✨ Key Features</h3>
 
 * 🏠 Root Module (AppModule) – Bootstraps the application
 
@@ -254,57 +255,57 @@ src/
  │                 └── button.component.html
  
 
-⚡ Setup Instructions
+<h3>⚡ Setup Instructions</h3>h3>
 
-Clone the repo
+1. Clone the repo
 
-git clone <your-repo-url>
-cd module-demo
-
-
-Install dependencies
-
-npm install
+       git clone <your-repo-url>
+       cd module-demo
 
 
-Run the development server
+2. Install dependencies
 
-ng serve
-
-
-Open the app in browser
-
-http://localhost:4200
+       npm install
 
 
-🖥️ See the main app header
+3. Run the development server
 
-👤 Go to /profile to view ProfileComponent with a reusable ButtonComponent
+       ng serve
 
-🛠️ How It Works
-Feature Module (UserModule)
 
-Contains ProfileComponent
+4. Open the app in browser
 
-Imports SharedModuleExampleModule for reusable components
+       http://localhost:4200
 
-Defines its own routes with RouterModule.forChild()
 
-Shared Module (SharedModuleExampleModule)
+* 🖥️ See the main app header
+* 👤 Go to /profile to view ProfileComponent with a reusable ButtonComponent
 
-Declares reusable components, directives, and pipes
+<h3>🛠️ How It Works</h3>h3>
 
-Exports them for use in feature modules
+<b>Feature Module (UserModule)</b>
 
-Includes CommonModule & FormsModule
+* Contains ProfileComponent
 
-AppModule
+* Imports SharedModuleExampleModule for reusable components
 
-Root module that imports UserModule
+* Defines its own routes with RouterModule.forChild()
 
-Bootstraps AppComponent
+<b>Shared Module (SharedModuleExampleModule)</b>
 
-Contains <router-outlet> for routing
+* Declares reusable components, directives, and pipes
+
+* Exports them for use in feature modules
+
+* Includes CommonModule & FormsModule
+
+<b>AppModule</b>
+
+* Root module that imports UserModule
+
+* Bootstraps AppComponent
+
+* Contains <router-outlet> for routing
 
 💡 Example Usage
 
