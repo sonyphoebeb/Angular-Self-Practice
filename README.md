@@ -332,18 +332,18 @@ src/
     # Run tests
     ng test
 
-📝 Notes
+<h3>📝 Notes</h3>
 
-All components are NgModule-based ✅
+* All components are NgModule-based ✅
 
-Import SharedModuleExampleModule in any feature module that uses shared components 🔁
+* Import SharedModuleExampleModule in any feature module that uses shared components 🔁
 
-💻 Dependencies
+<h3>💻 Dependencies</h3>
 
-Angular CLI: 18+
+* Angular CLI: 18+
 
-Node.js: 20+
+* Node.js: 20+
 
-npm: 11+
+* npm: 11+
 
 
