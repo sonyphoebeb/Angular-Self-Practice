@@ -207,7 +207,7 @@ It’s built using Angular CLI and follows NgModule-based architecture for clean
 
 <b>✨ Key Features</b>
 
-🏠 Root Module (AppModule) – Bootstraps the application
+* 🏠 Root Module (AppModule) – Bootstraps the application
 
 👤 Feature Module (UserModule) – Contains user-related components (ProfileComponent)
 
