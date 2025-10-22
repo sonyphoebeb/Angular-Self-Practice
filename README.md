@@ -255,7 +255,7 @@ src/
  │                 └── button.component.html
  
 
-<h3>⚡ Setup Instructions</h3>h3>
+<h3>⚡ Setup Instructions</h3>
 
 1. Clone the repo
 
@@ -281,7 +281,7 @@ src/
 * 🖥️ See the main app header
 * 👤 Go to /profile to view ProfileComponent with a reusable ButtonComponent
 
-<h3>🛠️ How It Works</h3>h3>
+<h3>🛠️ How It Works</h3>
 
 <b>Feature Module (UserModule)</b>
 
@@ -307,23 +307,22 @@ src/
 
 * Contains <router-outlet> for routing
 
-💡 Example Usage
+<h3>💡 Example Usage</h3>
 
-Using Shared Button:
+<b>Using Shared Button:</b>
 
-<app-button label="Show Details"></app-button>
+    <app-button label="Show Details"></app-button>
 
+<b>Highlight Directive:</b>
 
-Highlight Directive:
+    <p appHighlight="lightblue">Hover me! ✨</p>
 
-<p appHighlight="lightblue">Hover me! ✨</p>
+<b>Capitalize Pipe:</b>
 
-
-Capitalize Pipe:
-
-<p>{{ 'angular demo' | capitalize }}</p>
+    <p>{{ 'angular demo' | capitalize }}</p>
 
 ⚙️ Commands
+
 # Serve the app
 ng serve
 
