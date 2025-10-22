@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { Button } from '../../../../../app/shared/button/button';
+import { CapitalizePipe } from '../../../../../app/shared/capitalize-pipe';
 
 @Component({
   selector: 'app-profile',
-  imports: [],
+  imports: [Button, CapitalizePipe],
   templateUrl: './profile.html',
   styleUrl: './profile.css'
 })

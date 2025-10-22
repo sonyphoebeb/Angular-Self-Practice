@@ -1,12 +1,11 @@
 import { Interpolation } from './interpolation/interpolation';
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { PropertyBinding } from './property-binding/property-binding';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Interpolation, PropertyBinding],
+  imports: [Interpolation, PropertyBinding],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
