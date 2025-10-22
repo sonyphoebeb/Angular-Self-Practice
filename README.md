@@ -223,35 +223,35 @@ src/
 
  ├── app/
  
- │    ├── app.module.ts
+ │      ├── app.module.ts
  
- │    ├── app.component.ts
+ │      ├── app.component.ts
  
- │    ├── app.component.html
+ │      ├── app.component.html
  
- │    ├── app-routing.module.ts
+ │      ├── app-routing.module.ts
+  
+ │      ├── user/
  
- │    ├── user/
+ │      │       ├── user.module.ts
  
- │    │     ├── user.module.ts
+ │      │       └── profile/
  
- │    │     └── profile/
+ │      │              ├── profile.component.ts
  
- │    │           ├── profile.component.ts
+ │      │              ├── profile.component.html
  
- │    │           ├── profile.component.html
+ │      │              └── profile.component.css
  
- │    │           └── profile.component.css
- 
- │    └── shared-module-example/
+ │      └── shared-module-example/
  
  │          ├── shared-module-example-module.ts
  
  │          └── button/
  
- │               ├── button.component.ts
+ │                 ├── button.component.ts
  
- │               └── button.component.html
+ │                 └── button.component.html
  
 
 ⚡ Setup Instructions
