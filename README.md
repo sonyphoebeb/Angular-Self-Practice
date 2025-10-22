@@ -193,17 +193,19 @@ Type: One-way data binding (Component ➡ DOM Property)
 </table>
 
 
+
 <br>
 # 🚀 Angular Feature & Shared Modules Practice
 
 <b>📅 Date: 22 October 2025 </b> 
 
-📖 Overview
+<b>📖 Overview</b>
 
 This project demonstrates Feature Modules and Shared Modules in Angular.
+
 It’s built using Angular CLI and follows NgModule-based architecture for clean, modular code.
 
-✨ Key Features
+<b>✨ Key Features</b>
 
 🏠 Root Module (AppModule) – Bootstraps the application
 
