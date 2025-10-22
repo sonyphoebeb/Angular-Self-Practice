@@ -220,39 +220,23 @@ It’s built using Angular CLI and follows NgModule-based architecture for clean
 
 <b>📂 Folder Structure</b>
 
-src/
-
- ├── app/
- 
- │      ├── app.module.ts
- 
- │      ├── app.component.ts
- 
- │      ├── app.component.html
- 
- │      ├── app-routing.module.ts
-  
- │      ├── user/
- 
- │      │       ├── user.module.ts
- 
- │      │       └── profile/
- 
- │      │              ├── profile.component.ts
- 
- │      │              ├── profile.component.html
- 
- │      │              └── profile.component.css
- 
- │      └── shared-module-example/
- 
- │          ├── shared-module-example-module.ts
- 
- │          └── button/
- 
- │                 ├── button.component.ts
- 
- │                 └── button.component.html
+    src/
+    ├── app/ 
+    │      ├── app.module.ts 
+    │      ├── app.component.ts
+    │      ├── app.component.html 
+    │      ├── app-routing.module.ts 
+    │      ├── user/
+    │      │       ├── user.module.ts
+    │      │       └── profile/
+    │      │              ├── profile.component.ts
+    │      │              ├── profile.component.html
+    │      │              └── profile.component.css
+    │      └── shared-module-example/
+    │          ├── shared-module-example-module.ts
+    │          └── button/
+    │                 ├── button.component.ts
+    │                 └── button.component.html
  
 
 <h3>⚡ Setup Instructions</h3>
