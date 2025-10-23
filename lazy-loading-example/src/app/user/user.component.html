@@ -1,0 +1,26 @@
+<div class="user-container">
+  <h2>👤 {{ title }}</h2>
+  <p>This is a lazy-loaded user component!</p>
+  
+  <div class="user-profile">
+    <h3>Profile Information:</h3>
+    <div class="profile-card">
+      <div class="profile-item">
+        <strong>Name:</strong> {{ user.name }}
+      </div>
+      <div class="profile-item">
+        <strong>Email:</strong> {{ user.email }}
+      </div>
+      <div class="profile-item">
+        <strong>Member since:</strong> {{ user.joinDate | date:'longDate' }}
+      </div>
+    </div>
+  </div>
+  
+  <div class="user-actions">
+    <h3>Quick Actions:</h3>
+    <button class="action-btn">Edit Profile</button>
+    <button class="action-btn">Change Password</button>
+    <button class="action-btn">View Activity</button>
+  </div>
+</div>
