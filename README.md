@@ -194,5 +194,140 @@ Type: One-way data binding (Component ➡ DOM Property)
 
 
 
+<br>
+
+#  🚀 Angular Feature & Shared Modules Practice
+
+<b>📅 Date: 22 October 2025 </b> 
+
+<h3>📖 Overview</h3>
+
+This project demonstrates Feature Modules and Shared Modules in Angular.
+
+It’s built using Angular CLI and follows NgModule-based architecture for clean, modular code.
+
+<h3>✨ Key Features</h3>
+
+* 🏠 Root Module (AppModule) – Bootstraps the application
+
+* 👤 Feature Module (UserModule) – Contains user-related components (ProfileComponent)
+
+* 🛠️ Shared Module (SharedModuleExampleModule) – Reusable components, directives, and pipes (ButtonComponent, HighlightDirective, CapitalizePipe)
+
+* 🌐 Routing – Feature module routes for /profile
+
+* 🔁 Reusability – Shared components usable across multiple modules
+
+<b>📂 Folder Structure</b>
+
+    src/
+    ├── app/ 
+    │      ├── app.module.ts 
+    │      ├── app.component.ts
+    │      ├── app.component.html 
+    │      ├── app-routing.module.ts 
+    │      ├── user/
+    │      │       ├── user.module.ts
+    │      │       └── profile/
+    │      │              ├── profile.component.ts
+    │      │              ├── profile.component.html
+    │      │              └── profile.component.css
+    │      └── shared-module-example/
+    │          ├── shared-module-example-module.ts
+    │          └── button/
+    │                 ├── button.component.ts
+    │                 └── button.component.html
+ 
+
+<h3>⚡ Setup Instructions</h3>
+
+1. Clone the repo
+
+       git clone <your-repo-url>
+       cd module-demo
+
+
+2. Install dependencies
+
+       npm install
+
+
+3. Run the development server
+
+       ng serve
+
+
+4. Open the app in browser
+
+       http://localhost:4200
+
+
+* 🖥️ See the main app header
+* 👤 Go to /profile to view ProfileComponent with a reusable ButtonComponent
+
+<h3>🛠️ How It Works</h3>
+
+<b>Feature Module (UserModule)</b>
+
+* Contains ProfileComponent
+
+* Imports SharedModuleExampleModule for reusable components
+
+* Defines its own routes with RouterModule.forChild()
+
+<b>Shared Module (SharedModuleExampleModule)</b>
+
+* Declares reusable components, directives, and pipes
+
+* Exports them for use in feature modules
+
+* Includes CommonModule & FormsModule
+
+<b>AppModule</b>
+
+* Root module that imports UserModule
+
+* Bootstraps AppComponent
+
+* Contains <router-outlet> for routing
+
+<h3>💡 Example Usage</h3>
+
+<b>Using Shared Button:</b>
+
+    <app-button label="Show Details"></app-button>
+
+<b>Highlight Directive:</b>
+
+    <p appHighlight="lightblue">Hover me! ✨</p>
+
+<b>Capitalize Pipe:</b>
+
+    <p>{{ 'angular demo' | capitalize }}</p>
+
+<h3>⚙️ Commands</h3>
+
+    # Serve the app
+    ng serve
+
+    # Build for production
+    ng build --prod
+
+    # Run tests
+    ng test
+
+<h3>📝 Notes</h3>
+
+* All components are NgModule-based ✅
+
+* Import SharedModuleExampleModule in any feature module that uses shared components 🔁
+
+<h3>💻 Dependencies</h3>
+
+* Angular CLI: 18+
+
+* Node.js: 20+
+
+* npm: 11+
 
 
