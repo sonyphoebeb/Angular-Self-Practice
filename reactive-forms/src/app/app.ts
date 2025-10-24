@@ -16,7 +16,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./app.css']
 })
 export class App {
-  title = 'Reactive Forms Demo (Standalone)';
+  title = 'Reactive Forms Example';
 
   // Create main form group
   userForm = new FormGroup({
