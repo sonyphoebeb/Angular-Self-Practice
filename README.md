@@ -331,3 +331,92 @@ It’s built using Angular CLI and follows NgModule-based architecture for clean
 * npm: 11+
 
 
+
+
+<br>
+
+#  🚀 Angular Lazy Loading Practice
+
+<b>📅 Date: 23 October 2025 </b> 
+
+<h3>📖 Overview</h3>
+
+A simple Angular project demonstrating module lazy loading: feature modules load only when needed, improving performance and reducing the initial bundle size.
+
+<h3>✨ Key Features</h3>
+
+* Lazy-loaded feature modules (`AdminModule`, `UserModule`)
+    
+* Clean navigation from the Home page to each module
+  
+* Code splitting and on-demand loading for better UX
+
+* Responsive UI with consistent styling (Home, User, Admin pages)
+  
+* Easy to extend with additional modules  
+
+<h3>🗂 Folder Structure</h3>  
+    
+    src/
+    ├── app/
+    │ ├── home/
+    │ │ └── home.component.ts/html/css
+    │ ├── admin/
+    │ │ ├── admin.module.ts
+    │ │ ├── admin-routing.module.ts
+    │ │ └── admin.component.ts/html/css
+    │ ├── user/
+    │ │ ├── user.module.ts
+    │ │ ├── user-routing.module.ts
+    │ │ └── user.component.ts/html/css
+    │ ├── app-routing.module.ts
+    │ └── app.module.ts
+
+<h3>🛠 Setup Instructions</h3>  
+
+1. Clone the repository:  
+  
+       git clone https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
+       cd <REPO_NAME>
+   
+2. Install dependencies:
+
+       npm install
+   
+3. Run the app:
+
+       ng serve
+
+4. Open your browser at http://localhost:4200
+
+<h3>🔍 How It Works</h3>
+    
+* The root AppModule defines routes in app-routing.module.ts with loadChildren for the feature modules.
+
+* When the user navigates to /admin or /user, the respective module is loaded dynamically.
+
+* In the browser’s Network tab you’ll see that extra JS chunks are downloaded only when those routes are visited.
+
+* This strategy reduces the main bundle size and improves initial load time.
+
+<h3>🧪 Example Usage</h3>
+    
+* Start on the Home page and click “Admin” → the AdminModule loads and displays its component.
+
+* Click “User” → the UserModule loads on demand and displays its UI.
+
+* Use your browser dev tools to verify lazy-loaded chunks appear only on navigation.
+
+<h3>📌 Notes</h3>
+    
+* Ensure you use RouterModule.forChild() inside feature modules.
+
+* Do not import feature modules in AppModule directly — that breaks lazy loading.
+
+* Consider adding a preloading strategy (e.g., PreloadAllModules) to load modules in the background for smoother navigation.
+
+* CSS is structured using variables, consistent spacing and responsive breakpoints — feel free to adapt to your design system.
+
+
+
+
