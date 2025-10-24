@@ -6,8 +6,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-login',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  templateUrl: './login.html',
+  styleUrls: ['./login.css']
 })
 export class Login {
   loginForm = new FormGroup({

@@ -8,10 +8,11 @@ import {
   ReactiveFormsModule
 } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { Login } from './login/login';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, ReactiveFormsModule, RouterOutlet],
+  imports: [CommonModule, ReactiveFormsModule, RouterOutlet, Login],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
