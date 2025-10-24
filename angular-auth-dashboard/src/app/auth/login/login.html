@@ -1,11 +1,40 @@
-<div class="container">
-    <h2>Login</h2>
-    <label>Username</label>
-    <input type="text" [(ngModel)]="username">
+<div class="login-container">
+    <div class="login-card">
+        <div class="login-header">
+            <h1 class="login-title">Welcome Back</h1>
+            <p class="login-subtitle">Sign in to your account</p>
+        </div>
+        
+        <form class="login-form">
+            <div class="login-input-group">
+                <input 
+                    type="text" 
+                    [(ngModel)]="username" 
+                    placeholder="Enter your username"
+                    class="login-input"
+                    name="username">
+                <span class="login-icon">👤</span>
+            </div>
 
-    <label>Password</label>
-    <input type="password" [(ngModel)]="password">
+            <div class="login-input-group">
+                <input 
+                    type="password" 
+                    [(ngModel)]="password" 
+                    placeholder="Enter your password"
+                    class="login-input"
+                    name="password">
+                <span class="login-icon">🔒</span>
+            </div>
 
-    <button (click)="login()">Login</button>
-    <div class="error" *ngIf="error">{{error}}</div>
+            <button type="button" (click)="login()" class="login-button">
+                Sign In
+            </button>
+            
+            <div class="login-error" *ngIf="error">{{error}}</div>
+        </form>
+        
+        <div class="login-footer">
+            <p class="login-footer-text">Secure authentication powered by Angular</p>
+        </div>
+    </div>
 </div>

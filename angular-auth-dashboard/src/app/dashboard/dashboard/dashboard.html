@@ -1,12 +1,56 @@
-<div class="container">
-    <h2>Dashboard</h2>
-    <p>Welcome, admin!</p>
+<div class="dashboard-container">
+    <div class="dashboard-header">
+        <h1 class="dashboard-title">Dashboard</h1>
+        <p class="dashboard-subtitle">Welcome back, admin! Here's what's happening today.</p>
+        
+        <nav class="dashboard-nav">
+            <a routerLink="/dashboard/profile" routerLinkActive="active" class="dashboard-nav-link">
+                👤 Profile
+            </a>
+            <a routerLink="/dashboard/settings" routerLinkActive="active" class="dashboard-nav-link">
+                ⚙️ Settings
+            </a>
+        </nav>
+    </div>
 
-    <nav>
-        <a routerLink="/dashboard/profile">Profile</a> |
-        <a routerLink="/dashboard/settings">Settings</a>
-    </nav>
+    <div class="dashboard-stats">
+        <div class="stat-card">
+            <div class="stat-icon primary">📊</div>
+            <div class="stat-value">1,234</div>
+            <div class="stat-label">Total Users</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon success">✅</div>
+            <div class="stat-value">98.5%</div>
+            <div class="stat-label">Uptime</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon warning">📈</div>
+            <div class="stat-value">+12%</div>
+            <div class="stat-label">Growth Rate</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon info">🔔</div>
+            <div class="stat-value">5</div>
+            <div class="stat-label">Notifications</div>
+        </div>
+    </div>
 
-    <router-outlet></router-outlet>
-    <button (click)="logout()">Logout</button>
+    <div class="dashboard-content">
+        <div class="dashboard-card">
+            <div class="dashboard-card-header">
+                <h2 class="dashboard-card-title">Quick Actions</h2>
+            </div>
+            <div class="dashboard-card-content">
+                <p>Manage your account settings, view your profile information, and customize your dashboard experience.</p>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-actions">
+        <button (click)="logout()" class="logout-button">
+            🚪 Logout
+        </button>
+    </div>
 </div>
