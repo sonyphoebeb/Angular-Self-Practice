@@ -1,1 +1,12 @@
-<p>dashboard works!</p>
+<div class="container">
+    <h2>Dashboard</h2>
+    <p>Welcome, admin!</p>
+
+    <nav>
+        <a routerLink="/dashboard/profile">Profile</a> |
+        <a routerLink="/dashboard/settings">Settings</a>
+    </nav>
+
+    <router-outlet></router-outlet>
+    <button (click)="logout()">Logout</button>
+</div>
